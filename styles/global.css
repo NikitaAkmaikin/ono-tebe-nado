@@ -30,6 +30,7 @@ blockquote {
 
 a {
   color: inherit;
+  text-underline-position: under;
 }
 
 img {
