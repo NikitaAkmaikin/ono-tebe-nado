@@ -1,2 +1,2 @@
 # ono-tebe-nado
-https://github.com/NikitaAkmaikin/ono-tebe-nado.git
+https://github.com/NikitaAkmaikin/ono-tebe-nado
