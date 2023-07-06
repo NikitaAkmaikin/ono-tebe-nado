@@ -1,7 +1,11 @@
 /* genegal */
 
+* {
+  font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+}
+
 .container {
-  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 50px;
 }
@@ -45,7 +49,6 @@
 }
 
 .header__links-list-item {
-  font-family: Raleway;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -70,9 +73,11 @@
 
 .cover {
   position: relative;
-  max-width: 1440px;
-  height: 757px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 181px;
+  padding: 0 50px;
   padding-bottom: 50px;
   background-color: rgba(rgb(103, 66, 66), rgb(13, 16, 13), rgb(10, 10, 12), 1);
   background-image: url(../images/cover.jpg);
@@ -82,6 +87,7 @@
 }
 
 .cover__title {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding: 165px 0 133px;
@@ -103,8 +109,7 @@
 }
 
 .aligned-text_right {
-  margin-right: auto;
-  margin-left: 69%;
+  margin-right: -30px;
   line-height: 1.04;
   text-align: end;
 }
@@ -121,6 +126,7 @@
 }
 
 .cover__description {
+  z-index: 1;
   display: flex;
   justify-content: end;
   font-size: 22px;
@@ -142,12 +148,17 @@
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* секция lots */
 
 .lots {
   margin-bottom: 181px;
+}
+
+.lots ul {
+  list-style-type: none;
 }
 
 .lots__heading {
@@ -160,7 +171,7 @@
 
 .lots__container-card {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   gap: 25px;
 }
 
@@ -179,10 +190,15 @@
   background-size: cover;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 .card__title {
   z-index: 1;
   font-weight: 700;
   font-size: 22px;
+  text-decoration: underline;
   text-transform: uppercase;
 }
 
@@ -206,7 +222,7 @@
 }
 
 .lots__look-more-link {
-  padding-left: 40px;
+  margin-left: 40px;
   font-size: 20px;
 }
 
@@ -222,7 +238,9 @@
 }
 
 .about__logo {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   align-self: start;
   min-width: 240px;
   min-height: 240px;
@@ -232,10 +250,6 @@
 }
 
 .about__logo-image {
-  position: absolute;
-  top: 27%;
-  left: 19%;
-
   width: 148px;
   height: 114px;
   background-repeat: no-repeat;
@@ -276,6 +290,11 @@
   flex-direction: column;
 }
 
+.footer__link ul {
+  text-align: center;
+  list-style-type: none;
+}
+
 .footer__link-item {
   font-size: 18px;
   text-align: center;
@@ -285,12 +304,14 @@
   text-decoration: none;
 }
 
-.messenger {
+.messenger ul {
   display: flex;
   gap: 48px;
+  text-align: center;
+  list-style-type: none;
 }
 
-.footer__social-link {
+.messenger ul li {
   width: 48px;
   height: 48px;
 }
