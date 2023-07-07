@@ -11,18 +11,22 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu container">
-        <ul class="header__links-list">
-          <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a href="#!">главная</a>
-          </li>
-          <li class="header__links-list-item">
-            <a href="#!">посмотреть лоты</a>
-          </li>
-          <li class="header__links-list-item">
-            <a href="#!">об аукционе</a>
-          </li>
-        </ul>
+      <div class="header__menu container">
+        <nav>
+          <ul class="header__links-list">
+            <li
+              class="header__links-list-item header__links-list-item_no-bullit"
+            >
+              <a href="#!">главная</a>
+            </li>
+            <li class="header__links-list-item">
+              <a href="#!">посмотреть лоты</a>
+            </li>
+            <li class="header__links-list-item">
+              <a href="#!">об аукционе</a>
+            </li>
+          </ul>
+        </nav>
         <a class="header__logo">
           <img
             src="./images/logo-black.svg"
@@ -39,7 +43,7 @@
             наб. Принсенграхт 263-265, <br />Амстердам
           </p>
         </address>
-      </nav>
+      </div>
     </header>
     <main class="main">
       <section class="cover">
@@ -63,13 +67,11 @@
         <div class="overlay"></div>
       </section>
       <section class="lots container">
-        <ul>
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__container-card">
           <li>
-            <h2 class="lots__heading">Лоты</h2>
-          </li>
-          <li>
-            <article class="lots__container-card">
-              <a class="card card-link card_type_film" href="#!">
+            <a class="card-link" href="#!">
+              <article class="card card_type_film" href="#!">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -79,8 +81,12 @@
                   Андерсон?
                 </p>
                 <div class="overlay"></div>
-              </a>
-              <a class="card card-link card_type_book" href="#!">
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="card-link" href="#!">
+              <article class="card card_type_book" href="#!">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -93,8 +99,12 @@
                   Джеймса Джойса?
                 </p>
                 <div class="overlay"></div>
-              </a>
-              <a class="card card-link card_type_picture" href="#!">
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="card-link" href="#!">
+              <article class="card card-link card_type_picture" href="#!">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -105,13 +115,11 @@
                   что это — одна из революционных работ Кандинского?
                 </p>
                 <div class="overlay"></div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <a href="#!" class="lots__look-more-link">посмотреть больше</a>
+              </article>
+            </a>
           </li>
         </ul>
+        <a href="#!" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__column container">
