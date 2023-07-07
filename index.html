@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="up">
       <div class="header__menu container">
         <nav>
           <ul class="header__links-list">
@@ -20,10 +20,10 @@
               <a href="#!">главная</a>
             </li>
             <li class="header__links-list-item">
-              <a href="#!">посмотреть лоты</a>
+              <a href="#lots">посмотреть лоты</a>
             </li>
             <li class="header__links-list-item">
-              <a href="#!">об аукционе</a>
+              <a href="#about">об аукционе</a>
             </li>
           </ul>
         </nav>
@@ -66,12 +66,12 @@
         </div>
         <div class="overlay"></div>
       </section>
-      <section class="lots container">
+      <section class="lots container" id="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__container-card">
           <li>
             <a class="card-link" href="#!">
-              <article class="card card_type_film" href="#!">
+              <article class="card card_type_film">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -86,7 +86,7 @@
           </li>
           <li>
             <a class="card-link" href="#!">
-              <article class="card card_type_book" href="#!">
+              <article class="card card_type_book">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -104,7 +104,7 @@
           </li>
           <li>
             <a class="card-link" href="#!">
-              <article class="card card-link card_type_picture" href="#!">
+              <article class="card card-link card_type_picture">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -121,7 +121,7 @@
         </ul>
         <a href="#!" class="lots__look-more-link">посмотреть больше</a>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__column container">
           <div class="about__logo">
             <img
@@ -168,15 +168,15 @@
         <nav class="footer__link">
           <ul>
             <li>
-              <a href="#!" class="footer__link-item footer__link_active"
+              <a href="#up" class="footer__link-item footer__link_active"
                 >главная</a
               >
             </li>
             <li>
-              <a href="#!" class="footer__link-item">посмотреть лоты</a>
+              <a href="#lots" class="footer__link-item">посмотреть лоты</a>
             </li>
             <li>
-              <a href="#!" class="footer__link-item">об аукционе</a>
+              <a href="#about" class="footer__link-item">об аукционе</a>
             </li>
           </ul>
         </nav>
