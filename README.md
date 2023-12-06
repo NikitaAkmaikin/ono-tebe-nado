@@ -1,7 +1,7 @@
 # ono-tebe-nado 
- # Проектная работа Mesto №1 на курсе Яндекс Практикум по Фронтенд-разработке
+ # Проектная работа Оно-Тебе-Надо №1 на курсе Яндекс Практикум по Фронтенд-разработке
 Ссылка на курс - https://practicum.yandex.ru/frontend-developer/
-Ссылка на проект для просмотра - https://github.com/NikitaAkmaikin/ono-tebe-nado
+Ссылка на проект для просмотра - https://nikitaakmaikin.github.io/ono-tebe-nado/
 
 Проектная работа на применение начальных навыков CSS. Цель - освоение CSS;
 
